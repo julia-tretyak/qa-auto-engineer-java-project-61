@@ -33,6 +33,7 @@ checkstyle {
     toolVersion = "10.12.0"
     configFile = file("${project.rootDir}/config/checkstyle/checkstyle.xml")
 }
+
 sonarqube {
     properties {
         property("sonar.projectKey", "julia-tretyak_qa-auto-engineer-java-project-61")
