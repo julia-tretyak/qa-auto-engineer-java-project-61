@@ -4,3 +4,11 @@
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=julia-tretyak_qa-auto-engineer-java-project-61&metric=bugs)](https://sonarcloud.io/summary/new_code?id=julia-tretyak_qa-auto-engineer-java-project-61)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=julia-tretyak_qa-auto-engineer-java-project-61&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=julia-tretyak_qa-auto-engineer-java-project-61)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=julia-tretyak_qa-auto-engineer-java-project-61&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=julia-tretyak_qa-auto-engineer-java-project-61)
+
+## Запуск игры "Проверка на чётность"
+
+### Победа
+[Смотреть запись победы](win.cast)
+
+### Поражение
+[Смотреть запись поражения](lose.cast)
