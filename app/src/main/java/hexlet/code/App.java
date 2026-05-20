@@ -2,12 +2,14 @@ package hexlet.code;
 
 import hexlet.code.games.EvenGame;
 import hexlet.code.games.CalcGame;
+import hexlet.code.games.GcdGame;
 import java.util.Scanner;
 
 public class App {
     private static final int GREET_GAME_NUMBER = 1;
     private static final int EVEN_GAME_NUMBER = 2;
     private static final int CALC_GAME_NUMBER = 3;
+    private static final int GCD_GAME_NUMBER = 4;
     private static final int EXIT_NUMBER = 0;
 
     public static void main(String[] args) {
@@ -17,6 +19,7 @@ public class App {
         System.out.println(GREET_GAME_NUMBER + " - Greet");
         System.out.println(EVEN_GAME_NUMBER + " - Even");
         System.out.println(CALC_GAME_NUMBER + " - Calc");
+        System.out.println(GCD_GAME_NUMBER + " - GCD");
         System.out.println(EXIT_NUMBER + " - Exit");
         System.out.print("Your choice: ");
 
@@ -31,6 +34,9 @@ public class App {
                 break;
             case CALC_GAME_NUMBER:
                 CalcGame.start();
+                break;
+            case GCD_GAME_NUMBER:
+                GcdGame.start();
                 break;
             case EXIT_NUMBER:
                 System.out.println("Goodbye!");
