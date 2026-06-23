@@ -1,16 +1,21 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
+import hexlet.code.Utils;
 
-public class GcdGame {
+public final class GcdGame {
     private static final int MAX_RANDOM_NUMBER = 100;
+
+    private GcdGame() {
+        // Утилитный класс
+    }
 
     public static void start() {
         String[][] rounds = new String[Engine.ROUNDS_TO_WIN][2];
 
         for (int i = 0; i < Engine.ROUNDS_TO_WIN; i++) {
-            int num1 = (int) (Math.random() * MAX_RANDOM_NUMBER) + 1;
-            int num2 = (int) (Math.random() * MAX_RANDOM_NUMBER) + 1;
+            int num1 = Utils.getRandomInt(1, MAX_RANDOM_NUMBER);
+            int num2 = Utils.getRandomInt(1, MAX_RANDOM_NUMBER);
             int gcd = calculateGcd(num1, num2);
 
             rounds[i][0] = num1 + " " + num2;
@@ -21,7 +26,6 @@ public class GcdGame {
     }
 
     private static int calculateGcd(int a, int b) {
-        // Алгоритм Евклида
         while (b != 0) {
             int temp = b;
             b = a % b;
@@ -30,4 +34,3 @@ public class GcdGame {
         return a;
     }
 }
-
