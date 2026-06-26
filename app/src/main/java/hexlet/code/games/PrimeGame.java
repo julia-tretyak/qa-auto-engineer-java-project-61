@@ -1,15 +1,20 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
+import hexlet.code.Utils;
 
-public class PrimeGame {
+public final class PrimeGame {
     private static final int MAX_RANDOM_NUMBER = 100;
+
+    private PrimeGame() {
+        // Утилитный класс
+    }
 
     public static void start() {
         String[][] rounds = new String[Engine.ROUNDS_TO_WIN][2];
 
         for (int i = 0; i < Engine.ROUNDS_TO_WIN; i++) {
-            int number = (int) (Math.random() * MAX_RANDOM_NUMBER) + 1;
+            int number = Utils.getRandomInt(1, MAX_RANDOM_NUMBER);
             String correctAnswer = isPrime(number) ? "yes" : "no";
 
             rounds[i][0] = String.valueOf(number);
@@ -31,4 +36,3 @@ public class PrimeGame {
         return true;
     }
 }
-
