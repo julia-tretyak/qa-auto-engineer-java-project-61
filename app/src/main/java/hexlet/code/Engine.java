@@ -2,8 +2,12 @@ package hexlet.code;
 
 import java.util.Scanner;
 
-public class Engine {
+public final class Engine {
     public static final int ROUNDS_TO_WIN = 3;
+
+    private Engine() {
+        // Утилитный класс
+    }
 
     public static void runGame(String gameDescription, String[][] questionsAndAnswers) {
         Scanner scanner = new Scanner(System.in);
@@ -25,8 +29,8 @@ public class Engine {
             if (userAnswer.equals(correctAnswer)) {
                 System.out.println("Correct!");
             } else {
-                System.out.println("'" + userAnswer + "' is wrong answer ;(. Correct answer was '"
-                        + correctAnswer + "'.");
+                System.out.println("'" + userAnswer + "' is wrong answer ;(. "
+                        + "Correct answer was '" + correctAnswer + "'.");
                 System.out.println("Let's try again, " + userName + "!");
                 return;
             }
@@ -35,4 +39,3 @@ public class Engine {
         System.out.println("Congratulations, " + userName + "!");
     }
 }
-
